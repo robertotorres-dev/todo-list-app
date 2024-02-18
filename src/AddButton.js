@@ -1,6 +1,8 @@
 function AddTodoButton() {
   return (
-    <button type='button'>Click here +</button>
+    <div className='add-button-container'>
+      <button type='button' className="add-button" >+</button>
+    </div>
   )
 }
 

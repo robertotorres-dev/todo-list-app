@@ -1,30 +1,40 @@
+import React from 'react';
 import { TodoCounter } from './TodoCounter';
 import { TodoItem } from './TodoItem';
 import { TodoFilter } from './TodoFilter';
 import { TodoList } from './TodoList';
 import { AddTodoButton } from './AddButton';
 import './App.css';
-import React from 'react';
 
 const defaultTodos = [
-  { text: 'Hacer despensa', completed: true },
-  { text: 'Cocinar', completed: false },
-  { text: 'Limpiar', completed: true },
-  { text: 'Ejercicio', completed: false },
+  { text: 'Homeworkd', completed: true },
+  { text: 'Cooking', completed: false },
+  { text: 'Celan', completed: true },
+  { text: 'Exercice', completed: false },
 ]
 
 function App() {
   return (
-    <React.Fragment>
-      <TodoCounter total={15} completed={10} />
-      <TodoFilter />
+    <div className="app-container">
+      <header className="app-header">
+        <h1>My Todo List</h1>
+        <TodoCounter total={15} completed={10} />
+      </header>
 
-      <TodoList>
-        {defaultTodos.map(({ text, completed }) => <TodoItem key={text} text={text} completed={completed} />)}
-      </TodoList>
+      <main className="app-main">
+        <div>
 
-      <AddTodoButton />
-    </React.Fragment>
+
+          <TodoFilter />
+
+          <TodoList>
+            {defaultTodos.map(({ text, completed }) => <TodoItem key={text} text={text} completed={completed} />)}
+          </TodoList>
+          <AddTodoButton />
+        </div>
+      </main>
+
+    </div>
   );
 }
 

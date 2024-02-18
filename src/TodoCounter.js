@@ -1,7 +1,7 @@
 function TodoCounter({ total, completed }) {
   return (
     <h1>
-      You've completed { completed } / { total } TODOS
+      Completed { completed } / { total } TODOS
     </h1>
   )
 }

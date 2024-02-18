@@ -1,6 +1,6 @@
 function TodoList(props) {
   return (
-    <ul>
+    <ul style={{ listStyle: 'none', padding: 0 }}>
       {props.children}
     </ul>
   )
