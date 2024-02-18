@@ -1,4 +1,6 @@
-function TodoFilter() {
+function TodoFilter({
+  filterValue, setFilterValue
+}) {
   return (
     <input
       style={{
@@ -12,6 +14,10 @@ function TodoFilter() {
         marginBottom: '10px',
       }}
       placeholder='Type a new task'
+      value={filterValue}
+      onChange={(event) => {
+        setFilterValue(event.target.value)
+      }}
     />
   )
 }

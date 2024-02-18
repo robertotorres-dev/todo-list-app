@@ -28,7 +28,7 @@
 }
 
 .centered-components {
-  text-align: center; /* Center-align text within the container */
+  text-align: left; /* Center-align text within the container */
   margin-top: 28px;
 }
 
@@ -36,7 +36,7 @@
 .centered-components input,
 .centered-components ul,
 .centered-components button {
-  font-size: 28px; /* Adjust font size as needed */
+  font-size: 24px; /* Adjust font size as needed */
 }
 
 .add-button-container {
