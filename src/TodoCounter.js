@@ -1,7 +1,7 @@
-function TodoCounter() {
+function TodoCounter({ total, completed }) {
   return (
     <h1>
-      You have completed 3 / 5 TODOS
+      You've completed { completed } / { total } TODOS
     </h1>
   )
 }

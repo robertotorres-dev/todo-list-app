@@ -1,8 +1,8 @@
-function TodoItem() {
+function TodoItem({ text, completed }) {
   return (
     <li>
       <span>C</span>
-      <p>Mi primer tarea</p>
+      <p>{text}</p>
       <span>X</span>
     </li>
   )
